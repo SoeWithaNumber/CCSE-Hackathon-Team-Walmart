@@ -3,7 +3,7 @@ const {readdirSync}=require("node:fs");
 require("dotenv").config();
 
 const bot = new Client({
-    intents: [GatewayIntentBits.GuildMessages, GatewayIntentBits.DirectMessages]
+    intents: [GatewayIntentBits.GuildMessages]
 });
 
 //welcome to the world :)
@@ -27,6 +27,7 @@ bot.on("interactionCreate", (interaction)=>{
     if (!interaction.isChatInputCommand()) return;
     switch(interaction.commandName){
         case "help": bot.commands.get("help").execute(interaction)
+        break
     }
     
 })
