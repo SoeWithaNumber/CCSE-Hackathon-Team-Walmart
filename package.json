@@ -1,0 +1,28 @@
+{
+  "name": "ani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node ./scripts/registerCommands.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoeWithaNumber/Ani-Rev2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoeWithaNumber/Ani-Rev2/issues"
+  },
+  "homepage": "https://github.com/SoeWithaNumber/Ani-Rev2#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "discord.js": "^14.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2"
+  }
+}
