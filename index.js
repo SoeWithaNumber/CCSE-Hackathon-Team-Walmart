@@ -1,4 +1,4 @@
-const {Client,Collection,GatewayIntentBits}=require("discord.js");
+const {Client,Collection,GatewayIntentBits, BitField}=require("discord.js");
 const {readdirSync}=require("node:fs");
 require("dotenv").config();
 
@@ -26,7 +26,8 @@ bot.on("ready",()=>{
 bot.on("interactionCreate", (interaction)=>{
     if (!interaction.isChatInputCommand()) return;
     switch(interaction.commandName){
-        case "help": bot.commands.get("help").execute(interaction)
+        case "help": bot.commands.get("help").execute(interaction);break;
+        case "write": bot.commands.get("write").execute(interaction);break;
     }
     
 })
