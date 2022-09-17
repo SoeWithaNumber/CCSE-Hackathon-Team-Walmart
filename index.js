@@ -28,6 +28,8 @@ bot.on("interactionCreate", (interaction)=>{
     switch(interaction.commandName){
         case "help": bot.commands.get("help").execute(interaction);break;
         case "notes": bot.commands.get("notes").execute(interaction);break;
+        case "tags": bot.commands.get("tags").execute(interaction);break;
+        case "list": bot.commands.get("list").execute(interaction);break;
     }
     
 })
