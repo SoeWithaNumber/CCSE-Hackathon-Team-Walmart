@@ -15,6 +15,12 @@ function execute(interaction) {
             break
         case "end":
             subcommands.get("end").execute(interaction)
+            break
+        case "get":
+            subcommands.get("get").execute(interaction)
+            break
+        case "share":
+            subcommands.get("share").execute(interaction)
     }
 }
 module.exports = {
@@ -28,7 +34,10 @@ module.exports = {
             )
         .addSubcommand(subcommand => subcommand
             .setName("end")
-            .setDescription("Discord notes end recording notes")),
+            .setDescription("Discord notes end recording notes"))
+        .addSubcommand(subcommand => subcommand
+            .setName("get")
+            .setDescription("Discord notes get note")),
     name: "notes"
 
 }

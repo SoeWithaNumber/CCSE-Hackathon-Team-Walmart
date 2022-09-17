@@ -3,7 +3,11 @@ function execute(interaction) {
     const helpEmbed = new EmbedBuilder()
         .setTitle("Welcome to Discord Notes!")
         .setColor("Blue")
-        .setDescription("WIP")
+        .setDescription(`
+        List: List your notes
+        Start: Start recording your notes
+        Tag: 
+        `)
         .setFooter({ text: "Version 0.1.0-dev" })
     interaction.reply({ embeds: [helpEmbed] })
 }

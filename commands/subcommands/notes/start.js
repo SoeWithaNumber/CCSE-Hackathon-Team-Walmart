@@ -1,6 +1,6 @@
 const {} = require("discord.js");
-function execute(interaction) {
-    console.log("start works")
+async function execute(interaction) {
+    interaction.reply("Start typing your notes!")
 }
 
 module.exports = {

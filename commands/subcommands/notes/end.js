@@ -1,6 +1,6 @@
 const {} = require("discord.js");
 function execute(interaction) {
-    console.log("end works")
+    interaction.reply("Finished recording notes!")
 }
 
 module.exports = {
