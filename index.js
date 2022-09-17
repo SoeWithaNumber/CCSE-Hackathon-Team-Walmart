@@ -27,7 +27,7 @@ bot.on("interactionCreate", (interaction)=>{
     if (!interaction.isChatInputCommand()) return;
     switch(interaction.commandName){
         case "help": bot.commands.get("help").execute(interaction);break;
-        case "write": bot.commands.get("write").execute(interaction);break;
+        case "notes": bot.commands.get("notes").execute(interaction);break;
     }
     
 })
