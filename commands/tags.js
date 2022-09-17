@@ -8,7 +8,17 @@ module.exports = {
     execute,
     data: new SlashCommandBuilder()
         .setName("tags")
-        .setDescription("Discord notes Tags Command"),
+        .setDescription("Discord notes Tags Command")
+        .addStringOption(option=>
+            option.setName("note")
+            .setDescription("The note whose tags you want to edit")
+            .setRequired(true)
+        )
+        .addStringOption(option =>
+            option.setName("tags")
+            .setDescription("The tags you want to add")
+            .setRequired(true)
+        ),
     name: "tags"
 
 }

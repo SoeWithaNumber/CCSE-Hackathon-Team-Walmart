@@ -31,13 +31,28 @@ module.exports = {
         .addSubcommand(subcommand => subcommand
             .setName("start")
             .setDescription("Discord notes begin recording notes")
+            .addStringOption(option =>
+                option.setName("title")
+                .setDescription("The title of the note you want to make")
+                .setRequired(true)
+                )
+            .addStringOption(option =>
+                option.setName("tags")
+                    .setDescription("The tags you want to put on the note")
+                    .setRequired(false)
+            )
             )
         .addSubcommand(subcommand => subcommand
             .setName("end")
             .setDescription("Discord notes end recording notes"))
         .addSubcommand(subcommand => subcommand
             .setName("get")
-            .setDescription("Discord notes get note")),
+            .setDescription("Discord notes get note")
+            .addStringOption(option=>
+                option.setName("note")
+                .setDescription("The note you want to get")
+                .setRequired(true)
+                )),
     name: "notes"
 
 }

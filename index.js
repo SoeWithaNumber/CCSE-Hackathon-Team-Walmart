@@ -30,6 +30,7 @@ bot.on("interactionCreate", (interaction)=>{
         case "notes": bot.commands.get("notes").execute(interaction);break;
         case "tags": bot.commands.get("tags").execute(interaction);break;
         case "list": bot.commands.get("list").execute(interaction);break;
+        case "share": bot.commands.get("share").execute(interaction);break;
     }
     
 })
